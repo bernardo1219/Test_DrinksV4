@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Search cocktails";
+}
+<div class="text-end">
+    <button id="btn_favorite_drinks" class="btn btn-primary">
+        My favorite cocktails
+    </button>
+</div>
+
+<div id="search_cocktails">
+    <div class="text-center mb-4">
+        <h1>Search cocktails</h1>
+        <div class="row mb-4">
+            <div class="col">
+                <input type="radio" name="typeSearch" value="BY_NAME" checked />
+                <label>By name</label>
+            </div>
+            <div class="col">
+                <input type="radio" name="typeSearch" value="BY_INGREDIENT" />
+                <label>By ingredient</label>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <input type="text" id="txtNameCocktail" class="form-control" />
+                <select id="slIngredients" class="form-control" style="display: none"></select>
+            </div>
+        </div>
+        <button id="btn_search_cocktails" class="btn btn-primary">
+            Search
+        </button>
+    </div>
+    <div id="results_search" class="mb-4"> </div>
+</div>
+
+<div id="favorite_cocktails" style="display: none">
+    <div class="text-center mb-4">
+        <h1>My favorite cocktails</h1>
+    </div>
+    <div id="favorite_cocktails_added" class="mb-4" ></div>
+</div>
